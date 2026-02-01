@@ -6,33 +6,39 @@
     <title>APEX TITAN X | SECURITY GATEWAY</title>
     <style>
         body { background-color: #050505; color: #00FF41; font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; overflow: hidden; }
-        .terminal { width: 90%; max-width: 700px; background: rgba(0, 20, 0, 0.9); border: 2px solid #00FF41; padding: 30px; box-shadow: 0 0 40px rgba(0, 255, 65, 0.4); position: relative; }
-        .header { border-bottom: 1px solid #00FF41; padding-bottom: 15px; margin-bottom: 20px; font-weight: bold; font-size: 1.2em; text-transform: uppercase; letter-spacing: 2px; }
-        .scan-line { width: 100%; height: 2px; background: rgba(0, 255, 65, 0.3); position: absolute; left: 0; animation: scan 3s linear infinite; }
+        .terminal { width: 90%; max-width: 700px; background: rgba(0, 20, 0, 0.9); border: 2px solid #00FF41; padding: 30px; box-shadow: 0 0 50px rgba(0, 255, 65, 0.4); position: relative; text-align: left; }
+        .header { border-bottom: 2px solid #00FF41; padding-bottom: 15px; margin-bottom: 20px; font-weight: bold; font-size: 1.4em; text-transform: uppercase; letter-spacing: 3px; text-align: center; }
+        .scan-line { width: 100%; height: 3px; background: rgba(0, 255, 65, 0.5); position: absolute; left: 0; animation: scan 4s linear infinite; z-index: 10; }
         @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
-        .highlight { color: #fff; font-weight: bold; text-shadow: 0 0 5px #00FF41; }
-        .status-box { border: 1px solid #00FF41; padding: 15px; margin: 20px 0; background: rgba(0, 40, 0, 0.5); }
-        .btn { display: inline-block; padding: 12px 24px; border: 1px solid #00FF41; color: #00FF41; text-decoration: none; text-transform: uppercase; font-weight: bold; transition: 0.3s; cursor: pointer; }
-        .btn:hover { background: #00FF41; color: #000; box-shadow: 0 0 20px #00FF41; }
-        .blink { animation: blinker 1s linear infinite; }
+        .highlight { color: #fff; font-weight: bold; text-shadow: 0 0 8px #00FF41; }
+        .status-box { border: 1px solid #00FF41; padding: 20px; margin: 25px 0; background: rgba(0, 40, 0, 0.3); line-height: 1.8; }
+        .btn { display: block; width: fit-content; margin: 30px auto 0; padding: 15px 35px; border: 2px solid #00FF41; color: #00FF41; text-decoration: none; text-transform: uppercase; font-weight: bold; transition: 0.4s; letter-spacing: 2px; }
+        .btn:hover { background: #00FF41; color: #000; box-shadow: 0 0 30px #00FF41; }
+        .blink { animation: blinker 1.5s linear infinite; color: #ff0000; text-shadow: 0 0 5px #ff0000; }
         @keyframes blinker { 50% { opacity: 0; } }
+        .footer-note { font-size: 10px; color: #444; margin-top: 20px; text-align: center; }
     </style>
 </head>
 <body>
     <div class="scan-line"></div>
     <div class="terminal">
         <div class="header">Apex Phoenix Titan X // Global Shield</div>
-        <div>> ACCESS STATUS: <span class="highlight">AUTHORIZED</span></div>
-        <div>> SYSTEM INTEGRITY: <span class="highlight">1200% VERIFIED</span></div>
+        <div style="margin-bottom: 10px;">> ACCESS STATUS: <span class="highlight">AUTHORIZED</span></div>
+        <div style="margin-bottom: 10px;">> SYSTEM INTEGRITY: <span class="highlight">1200% VERIFIED</span></div>
+        <div style="margin-bottom: 10px;">> ENCRYPTION: <span class="highlight">AES-256 ACTIVE</span></div>
+        
         <div class="status-box">
-            <div>[PROPULSION PARAMETERS]</div>
-            <div>----------------------------</div>
-            <div>MASS: 186 KG | SYNC: 12ns</div>
-            <div>ENERGY: <span class="blink">ZERO FUEL DETECTED</span></div>
+            <div style="font-weight: bold; text-decoration: underline;">[UNIT PARAMETERS]</div>
+            <div>STATUS: PRODUCTION READY 2026</div>
+            <div>MASS: 186 KG | SYNC: 12ns | PRESSURE: 15 BAR</div>
+            <div>ENERGY SOURCE: <span class="blink">ZERO FUEL ARCHITECTURE</span></div>
         </div>
-        <div style="margin-top: 30px;">
+
+        <div>
             <a href="mailto:apex.project.official@proton.me" class="btn">Establish Tunnel Access</a>
         </div>
+        
+        <div class="footer-note">"THE BIRTH MATRIX IS COMPLETE" - APEX TITAN X AUTHOR</div>
     </div>
 </body>
 </html>
